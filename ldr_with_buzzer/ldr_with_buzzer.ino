@@ -9,7 +9,7 @@ void setup(){
 }
 void loop(){
   sensorValue = analogRead(ldr);
-  value = 3*(sensorValue)+500;
+  value = 2*(sensorValue)+600;
   tone(buzzer,value);
   delay(10);
   Serial.print("sensor value");
